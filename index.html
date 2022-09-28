@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+
+    <!-- aos css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- magnific popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h1 {
+            color: green;
+        }
+ 
+        h2,
+        h3 {
+            font-family: Impact;
+        }
+ 
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+
+<!-- header section starts  -->
+
+<header>
+
+<div class="container">
+
+    <a href="#" class="logo"><span>S</span>mart<span>W</span>aste<span>M</span>anagement</a>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="multi.php" target="multi.php">Login/Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="fas fa-bars"></div>
+
+</div>
+
+</header>
+
+<!-- header section ends  -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+<div class="container">
+
+    <div class="row min-vh-100 align-items-center text-center text-md-left">
+
+        <div class="col-md-6 pr-md-5" data-aos="zoom-in">
+            <img src="images/image.jpg" width="100%" alt="">
+        </div>
+
+        <div class="col-md-6 pl-md-5 content" data-aos="fade-left">
+            
+            <h1>This is an <span>Interface</span> for citizens to book their slots for <span>Waste Pickups</span></h1>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- home section ends -->
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <div class="container min-vh-100">
+
+        <div class="row justify-content-center">
+
+            <h1 class="heading"><span>'</span>Schedule a Waste Pickup Request<span>'</span></h1>
+
+            <div class="col-md-10" data-aos="flip-down">
+
+                <form action="insert.php" method="post">
+
+                    <div class="inputBox">
+                        <input type="text" name="Full_Name" placeholder="Full_Name" required>
+                        <input type="text" name="Slot_Time" placeholder="Slot_Time" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <select name="Garbage_Category" id="" required>
+                            <option value="" disabled selected>Choose your Waste Category</option>
+                            <option value="Plastic">Plastic</option>
+                            <option value="Food">Food</option>
+                            <option value="Paper">Paper</option>
+                            <option value="Glass">Glass</option>
+                            <option value="Cloth">Cloth</option>
+                        </select>
+                        <input type="number" name="Amount_Garbage_kg" placeholder="Amount_Garbage_kg" required>
+                    </div>                    
+                    <a href="indexa.php" target="indexa.php" class="button">Use Your Location</a>
+                    
+                    <p><input type="file"  accept="images/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                    <p class="button"><label for="file" style="cursor: pointer;">Upload Image</label></p>
+                    <p><img id="output" width="200" /></p>
+
+                    <script>
+                    var loadFile = function(event) {
+                        var image = document.getElementById('output');
+                        image.src = URL.createObjectURL(event.target.files[0]);
+                    };
+                    </script>
+
+                    <input type="submit" name="submit" id="" value="submit" class="button">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <h1 class="credit text-center mx-auto">Created By <span>Team Tech Ops</span> | All Rights Reserved.</h1>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<!-- aos js file cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- custom js link  -->
+<script src="main.js"></script>
+
+
+<script>
+
+AOS.init({
+    duration:1000,
+    delay:400
+});
+
+</script>
+
+</body>
+</html>

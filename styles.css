@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.card{
+    color: rgb(19, 175, 5);
+    background-color: rgba(126, 123, 215, 0.3);
+    min-width: 500px;
+    min-height: 500px;
+    border-radius: 15px;
+}
+.card h3{
+    padding: 30px;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.form-group{
+    font-size: 20px;
+    margin: 20px;
+}
+.form-group input{
+    display: block;
+    width: 90%;
+    padding: 10px 0;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 0;
+    color: black;
+    height: 30px;
+    font-size: 20px;
+    box-shadow: 0 1px 0 0 rgb(7, 196, 38);
+    transition: all .5s linear;
+}
+.form-group input:focus,
+.form-group input:valid{
+    outline: none;
+    height: 60px;
+}
+.card .btn{
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #20ce1a;
+    color: #333;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px
+}
+.card .btn:focus{
+    outline: none;
+}
+.card .btn:hover{
+    background-color: #e9e9e9;
+}
+.card .btn:active {
+    position: relative;
+    top: 2px;
+}
+.card a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+.card a:hover{
+    text-decoration: underline;
+}
